@@ -1,0 +1,10 @@
+(module 1X01-SM (layer F.Cu) (tedit 0)
+  (fp_text reference J6 (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (fp_text value PINHD1X1-SM1X01_SM (at 0 0) (layer F.SilkS) hide
+    (effects (font (size 1.27 1.27) (thickness 0.15)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask)
+    (solder_mask_margin 0.1016))
+)
