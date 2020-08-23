@@ -1,5 +1,5 @@
 (module MODULE_ESP32-DEVKITC-32D (layer F.Cu) (tedit 0)
-  (fp_text reference U1 (at 0 0) (layer F.SilkS) hide
+  (fp_text reference REF** (at 0 0) (layer F.SilkS)
     (effects (font (size 0.77216 0.77216) (thickness 0.077216)) (justify left bottom))
   )
   (fp_text value ESP32-DEVKITC-32D (at 0 0) (layer F.SilkS) hide
@@ -17,12 +17,7 @@
   (fp_line (start 14.2 -27.4) (end 14.2 27.5) (layer Dwgs.User) (width 0.05))
   (fp_line (start 14.2 27.5) (end -14.2 27.5) (layer Dwgs.User) (width 0.05))
   (fp_line (start -14.2 27.5) (end -14.2 -27.4) (layer Dwgs.User) (width 0.05))
-  (fp_text user ">NAME\n							" (at -14.0198 -27.8394) (layer F.SilkS)
-    (effects (font (size 1.20821 1.20821) (thickness 0.101744)) (justify left bottom))
-  )
-  (fp_text user ">VALUE\n							" (at -14.0201 28.9416) (layer F.Fab)
-    (effects (font (size 1.208239 1.208239) (thickness 0.101746)) (justify left bottom))
-  )
+
   (fp_circle (center -14.6 -19.9) (end -14.46 -19.9) (layer F.Fab) (width 0.28))
   (fp_circle (center -14.6 -19.9) (end -14.46 -19.9) (layer F.Fab) (width 0.28))
   (pad 1 thru_hole rect (at -12.7 -19.76) (size 1.56 1.56) (drill 1.04) (layers *.Cu *.Mask)

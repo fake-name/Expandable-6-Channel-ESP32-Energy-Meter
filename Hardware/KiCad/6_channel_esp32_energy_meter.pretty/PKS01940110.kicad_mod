@@ -1,17 +1,12 @@
 (module PKS01940110 (layer F.Cu) (tedit 0)
   (descr "<b>PKS019-4011-0-1</b><br>\n							")
-  (fp_text reference J9 (at 0 0 -180) (layer F.SilkS) hide
+  (fp_text reference REF** (at 0 0 -180) (layer F.SilkS)
     (effects (font (size 0.77216 0.77216) (thickness 0.061772)) (justify right top))
   )
   (fp_text value PKS019-4011-0 (at 0 0 -180) (layer F.SilkS) hide
     (effects (font (size 1.2065 1.2065) (thickness 0.09652)) (justify right top))
   )
-  (fp_text user ">NAME\n							" (at 0 -3.3) (layer F.SilkS)
-    (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-  )
-  (fp_text user ">VALUE\n							" (at 0 -3.3) (layer F.Fab)
-    (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-  )
+
   (fp_line (start -3.825 -6) (end 3.825 -6) (layer F.Fab) (width 0.2))
   (fp_line (start 3.825 -6) (end 3.825 0) (layer F.Fab) (width 0.2))
   (fp_line (start 3.825 0) (end -3.825 0) (layer F.Fab) (width 0.2))

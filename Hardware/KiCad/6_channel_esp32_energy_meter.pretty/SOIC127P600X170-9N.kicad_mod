@@ -1,17 +1,12 @@
 (module SOIC127P600X170-9N (layer F.Cu) (tedit 0)
   (descr "<b>DDA (R-PDSO-G8)</b><br>\n							")
-  (fp_text reference IC3 (at 0 0) (layer F.SilkS) hide
+  (fp_text reference REF** (at 0 0) (layer F.SilkS)
     (effects (font (size 0.77216 0.77216) (thickness 0.061772)) (justify left bottom))
   )
   (fp_text value LMR14020SDDA (at 0 0) (layer F.SilkS) hide
     (effects (font (size 1.2065 1.2065) (thickness 0.09652)) (justify left bottom))
   )
-  (fp_text user ">NAME\n							" (at 0 0) (layer F.SilkS)
-    (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-  )
-  (fp_text user ">VALUE\n							" (at 0 0) (layer F.Fab)
-    (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-  )
+
   (fp_line (start -3.725 -2.75) (end 3.725 -2.75) (layer F.Fab) (width 0.05))
   (fp_line (start 3.725 -2.75) (end 3.725 2.75) (layer F.Fab) (width 0.05))
   (fp_line (start 3.725 2.75) (end -3.725 2.75) (layer F.Fab) (width 0.05))

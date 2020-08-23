@@ -1,6 +1,6 @@
 (module QFP50P900X900X120-48 (layer F.Cu) (tedit 0)
   (descr "								48-QFP, 0.50 mm pitch, 9.00 mm span, 7.00 X 7.00 X 1.20 mm body\n<p>48-pin QFP package with 0.50 mm pitch, 9.00 mm lead span1 X 9.00 mm lead span2 with body size 7.00 X 7.00 X 1.20 mm</p>\n							")
-  (fp_text reference IC2 (at 0 0 -180) (layer F.SilkS) hide
+  (fp_text reference REF** (at 0 0 -180) (layer F.SilkS)
     (effects (font (size 0.77216 0.77216) (thickness 0.077216)) (justify right top))
   )
   (fp_text value ATM90E32AS (at 0 0 -180) (layer F.SilkS) hide
@@ -19,12 +19,7 @@
   (fp_line (start -3.5 3.5) (end -3.5 -3.5) (layer F.Fab) (width 0.12))
   (fp_line (start -3.5 -3.5) (end 3.5 -3.5) (layer F.Fab) (width 0.12))
   (fp_line (start 3.5 -3.5) (end 3.5 3.5) (layer F.Fab) (width 0.12))
-  (fp_text user ">NAME\n							" (at 0 -5.5409) (layer F.SilkS)
-    (effects (font (size 1.2065 1.2065) (thickness 0.1016)) (justify bottom))
-  )
-  (fp_text user ">VALUE\n							" (at 0 5.5409) (layer F.Fab)
-    (effects (font (size 1.2065 1.2065) (thickness 0.1016)) (justify top))
-  )
+
   (pad 1 smd rect (at -4.1269 -2.75) (size 1.5579 0.28) (layers F.Cu F.Paste F.Mask)
     (solder_mask_margin 0.1016))
   (pad 2 smd rect (at -4.1269 -2.25) (size 1.5579 0.28) (layers F.Cu F.Paste F.Mask)

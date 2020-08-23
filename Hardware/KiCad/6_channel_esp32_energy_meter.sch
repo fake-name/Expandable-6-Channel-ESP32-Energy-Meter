@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:6_channel_esp32_energy_meter-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -14,21 +15,315 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1000 1000 500  150 
+S 3200 1900 1600 1650
 U 5F4280A7
-F0 "6_channel_esp32_energy_meter_1" 50
-F1 "6_channel_esp32_energy_meter_1.sch" 50
+F0 "meter_1" 50
+F1 "single_metering_ic.sch" 50
+F2 "~RESET" I R 4800 2150 50 
+F3 "~CS" I R 4800 2400 50 
+F4 "SDI" I R 4800 2500 50 
+F5 "SDO" O R 4800 2600 50 
+F6 "SCLK" I R 4800 2700 50 
+F7 "V1P" I L 3200 2200 50 
+F8 "V1N" I L 3200 2300 50 
+F9 "V2P" I L 3200 2500 50 
+F10 "V2N" I L 3200 2600 50 
+F11 "IRQ1" I R 4800 2800 50 
 $EndSheet
 $Sheet
-S 3000 1000 500  150 
-U 5F4283F0
-F0 "6_channel_esp32_energy_meter_2" 50
-F1 "6_channel_esp32_energy_meter_2.sch" 50
+S 3200 4100 1600 1650
+U 60279ACE
+F0 "meter_2" 50
+F1 "single_metering_ic.sch" 50
+F2 "~RESET" I R 4800 4350 50 
+F3 "~CS" I R 4800 4600 50 
+F4 "SDI" I R 4800 4700 50 
+F5 "SDO" O R 4800 4800 50 
+F6 "SCLK" I R 4800 4900 50 
+F7 "V1P" I L 3200 4400 50 
+F8 "V1N" I L 3200 4500 50 
+F9 "V2P" I L 3200 4700 50 
+F10 "V2N" I L 3200 4800 50 
+F11 "IRQ1" I R 4800 5000 50 
 $EndSheet
-$Sheet
-S 5000 1000 500  150 
-U 5F4286DF
-F0 "6_channel_esp32_energy_meter_3" 50
-F1 "6_channel_esp32_energy_meter_3.sch" 50
-$EndSheet
+Wire Wire Line
+	3200 2200 2900 2200
+Wire Wire Line
+	2900 2200 2900 4400
+Wire Wire Line
+	2900 4400 3200 4400
+Wire Wire Line
+	3200 4500 2950 4500
+Wire Wire Line
+	2950 4500 2950 2300
+Wire Wire Line
+	2950 2300 3200 2300
+Wire Wire Line
+	3200 2500 3050 2500
+Wire Wire Line
+	3050 2500 3050 4700
+Wire Wire Line
+	3050 4700 3200 4700
+Wire Wire Line
+	3200 4800 3100 4800
+Wire Wire Line
+	3100 4800 3100 2600
+Wire Wire Line
+	3100 2600 3200 2600
+Wire Wire Line
+	4800 2150 5050 2150
+Wire Wire Line
+	5050 2150 5050 4350
+Wire Wire Line
+	5050 4350 4800 4350
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5F43993A
+P 1600 4400
+F 0 "J1" H 1650 4725 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 1650 4726 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 1600 4400 50  0001 C CNN
+F 3 "~" H 1600 4400 50  0001 C CNN
+	1    1600 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x07_Odd_Even J2
+U 1 1 5F439A03
+P 6550 2600
+F 0 "J2" H 6600 3025 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 6600 3026 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x07_P2.54mm_Vertical" H 6550 2600 50  0001 C CNN
+F 3 "~" H 6550 2600 50  0001 C CNN
+	1    6550 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 4300 1300 4300
+Wire Wire Line
+	1300 4300 1300 4200
+Wire Wire Line
+	1300 4200 1400 4200
+Wire Wire Line
+	1900 4200 2000 4200
+Wire Wire Line
+	2000 4200 2000 4300
+Wire Wire Line
+	2000 4300 1900 4300
+Wire Wire Line
+	1400 4500 1300 4500
+Wire Wire Line
+	1300 4500 1300 4600
+Wire Wire Line
+	1300 4600 1400 4600
+Wire Wire Line
+	1900 4500 2000 4500
+Wire Wire Line
+	2000 4500 2000 4600
+Wire Wire Line
+	2000 4600 1900 4600
+Wire Wire Line
+	3100 4800 2000 4800
+Wire Wire Line
+	2000 4800 2000 4600
+Connection ~ 3100 4800
+Connection ~ 2000 4600
+Wire Wire Line
+	3050 4700 1300 4700
+Wire Wire Line
+	1300 4700 1300 4600
+Connection ~ 3050 4700
+Connection ~ 1300 4600
+Wire Wire Line
+	2950 4500 2400 4500
+Connection ~ 2950 4500
+Wire Wire Line
+	1300 4200 1300 3900
+Wire Wire Line
+	1300 3900 2500 3900
+Wire Wire Line
+	2500 3900 2500 4400
+Wire Wire Line
+	2500 4400 2900 4400
+Connection ~ 1300 4200
+Connection ~ 2900 4400
+Wire Wire Line
+	2000 4200 2400 4200
+Wire Wire Line
+	2400 4200 2400 4500
+Connection ~ 2000 4200
+$Comp
+L power:GND #PWR02
+U 1 1 5F43C20E
+P 6300 3100
+F 0 "#PWR02" H 6300 2850 50  0001 C CNN
+F 1 "GND" H 6305 2927 50  0000 C CNN
+F 2 "" H 6300 3100 50  0001 C CNN
+F 3 "" H 6300 3100 50  0001 C CNN
+	1    6300 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5F43C25E
+P 6300 2050
+F 0 "#PWR01" H 6300 1900 50  0001 C CNN
+F 1 "+3.3V" H 6315 2223 50  0000 C CNN
+F 2 "" H 6300 2050 50  0001 C CNN
+F 3 "" H 6300 2050 50  0001 C CNN
+	1    6300 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3100 6300 2900
+Wire Wire Line
+	6300 2900 6350 2900
+$Comp
+L power:GND #PWR03
+U 1 1 5F43CB24
+P 6900 3100
+F 0 "#PWR03" H 6900 2850 50  0001 C CNN
+F 1 "GND" H 6905 2927 50  0000 C CNN
+F 2 "" H 6900 3100 50  0001 C CNN
+F 3 "" H 6900 3100 50  0001 C CNN
+	1    6900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3100 6900 2900
+Wire Wire Line
+	6900 2900 6850 2900
+Wire Wire Line
+	6300 2050 6300 2300
+Wire Wire Line
+	6300 2300 6350 2300
+$Comp
+L power:+3.3V #PWR04
+U 1 1 5F43F22F
+P 6950 2050
+F 0 "#PWR04" H 6950 1900 50  0001 C CNN
+F 1 "+3.3V" H 6965 2223 50  0000 C CNN
+F 2 "" H 6950 2050 50  0001 C CNN
+F 3 "" H 6950 2050 50  0001 C CNN
+	1    6950 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2050 6950 2300
+Wire Wire Line
+	6950 2300 6850 2300
+Wire Wire Line
+	4800 2500 5250 2500
+Wire Wire Line
+	5300 2600 4800 2600
+Wire Wire Line
+	5350 2700 5350 4900
+Wire Wire Line
+	5350 4900 4800 4900
+Wire Wire Line
+	4800 4800 5300 4800
+Wire Wire Line
+	5300 2600 5300 4800
+Wire Wire Line
+	5250 4700 4800 4700
+Wire Wire Line
+	5250 2500 5250 4700
+Wire Wire Line
+	7200 2400 6850 2400
+Wire Wire Line
+	7200 2400 7200 4600
+Wire Wire Line
+	4800 2400 6350 2400
+Wire Wire Line
+	5250 2500 6350 2500
+Connection ~ 5250 2500
+Wire Wire Line
+	5300 2600 6350 2600
+Connection ~ 5300 2600
+Wire Wire Line
+	5350 2700 6350 2700
+Connection ~ 5350 2700
+Wire Wire Line
+	4800 2700 5350 2700
+Wire Wire Line
+	4800 4600 7200 4600
+Wire Wire Line
+	4800 5000 7100 5000
+Wire Wire Line
+	7100 5000 7100 2500
+Wire Wire Line
+	7100 2500 6850 2500
+Wire Wire Line
+	4800 2800 6350 2800
+Wire Wire Line
+	6850 2700 6900 2700
+Wire Wire Line
+	6900 2700 6900 2800
+Connection ~ 6900 2900
+Wire Wire Line
+	6850 2800 6900 2800
+Connection ~ 6900 2800
+Wire Wire Line
+	6900 2800 6900 2900
+Text GLabel 8300 4550 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	8300 4150 8300 4250
+$Comp
+L 6_channel_esp32_energy_meter-eagle-import:R-US_R0603 R47
+U 1 0 5F45F957
+P 8300 3950
+AR Path="/5F45F957" Ref="R47"  Part="1" 
+AR Path="/5F4280A7/5F45F957" Ref="R?"  Part="1" 
+AR Path="/60279ACE/5F45F957" Ref="R?"  Part="1" 
+F 0 "R47" H 8150 4000 59  0000 L BNN
+F 1 "1k" H 8350 4000 59  0000 L BNN
+F 2 "6_channel_esp32_energy_meter:R0603" H 8300 3950 50  0001 C CNN
+F 3 "" H 8300 3950 50  0001 C CNN
+	1    8300 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 6_channel_esp32_energy_meter-eagle-import:LEDCHIPLED_0603 CF7
+U 1 0 5F45F95E
+P 8300 4350
+AR Path="/5F45F95E" Ref="CF7"  Part="1" 
+AR Path="/5F4280A7/5F45F95E" Ref="CF?"  Part="1" 
+AR Path="/60279ACE/5F45F95E" Ref="CF?"  Part="1" 
+F 0 "CF7" V 8350 4550 59  0000 R TNN
+F 1 "BLU" V 8350 4200 59  0000 R TNN
+F 2 "6_channel_esp32_energy_meter:CHIPLED_0603" H 8300 4350 50  0001 C CNN
+F 3 "" H 8300 4350 50  0001 C CNN
+	1    8300 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2650 8300 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5F45F966
+P 8300 4700
+AR Path="/5F4280A7/5F45F966" Ref="#PWR?"  Part="1" 
+AR Path="/60279ACE/5F45F966" Ref="#PWR?"  Part="1" 
+AR Path="/5F45F966" Ref="#PWR072"  Part="1" 
+F 0 "#PWR072" H 8300 4450 50  0001 C CNN
+F 1 "GND" H 8305 4527 50  0000 C CNN
+F 2 "" H 8300 4700 50  0001 C CNN
+F 3 "" H 8300 4700 50  0001 C CNN
+	1    8300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4550 8300 4700
+$Comp
+L power:+3.3V #PWR071
+U 1 1 5F460DBD
+P 8300 2650
+F 0 "#PWR071" H 8300 2500 50  0001 C CNN
+F 1 "+3.3V" H 8315 2823 50  0000 C CNN
+F 2 "" H 8300 2650 50  0001 C CNN
+F 3 "" H 8300 2650 50  0001 C CNN
+	1    8300 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

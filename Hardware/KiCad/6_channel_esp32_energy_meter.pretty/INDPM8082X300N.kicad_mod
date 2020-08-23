@@ -1,16 +1,10 @@
 (module INDPM8082X300N (layer F.Cu) (tedit 0)
   (descr "<b>3131</b><br>\n							")
-  (fp_text reference L1 (at 0 0 -180) (layer F.SilkS) hide
+  (fp_text reference REF** (at 0 0 -180) (layer F.SilkS)
     (effects (font (size 0.77216 0.77216) (thickness 0.077216)) (justify right top))
   )
   (fp_text value "3.3uH / 8x8mm" (at 0 0 -180) (layer F.SilkS) hide
     (effects (font (size 1.2065 1.2065) (thickness 0.09652)) (justify right top))
-  )
-  (fp_text user ">NAME\n							" (at 0 0) (layer F.SilkS)
-    (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
-  )
-  (fp_text user ">VALUE\n							" (at 0 0) (layer F.Fab)
-    (effects (font (size 1.2065 1.2065) (thickness 0.1016)))
   )
   (fp_line (start -4.85 -4.4) (end 4.85 -4.4) (layer F.Fab) (width 0.05))
   (fp_line (start 4.85 -4.4) (end 4.85 4.4) (layer F.Fab) (width 0.05))

@@ -1,6 +1,6 @@
 (module OSHW-LOGO-S (layer F.Cu) (tedit 0)
   (descr "<h3>Open-Source Hardware (OSHW) Logo - Small - Silkscreen</h3>\n<p>Silkscreen logo for open-source hardware designs.</p>\n<p>Devices using:\n<ul><li>OSHW_LOGO</li></ul></p>\n							")
-  (fp_text reference LOGO1 (at 0 0) (layer F.SilkS) hide
+  (fp_text reference REF** (at 0 0) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.15)))
   )
   (fp_text value OSHW-LOGOS (at 0 0) (layer F.SilkS) hide

@@ -1,6 +1,6 @@
 (module FIDUCIAL-MICRO (layer F.Cu) (tedit 0)
   (descr "<h3>Fiducial - Circle, 0.25in</h3>\n<p>Point-of-reference for pick-and-place machines and other optical instruments.</p>\n<p>Devices using:\n<ul><li>FIDUCIAL</li></ul></p>\n							")
-  (fp_text reference FD2 (at 0 0) (layer F.SilkS) hide
+  (fp_text reference REF** (at 0 0) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.15)))
   )
   (fp_text value FIDUCIALUFIDUCIAL (at 0 0) (layer F.SilkS) hide

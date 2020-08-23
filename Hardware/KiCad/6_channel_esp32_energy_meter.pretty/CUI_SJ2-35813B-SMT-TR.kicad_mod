@@ -1,5 +1,5 @@
 (module CUI_SJ2-35813B-SMT-TR (layer F.Cu) (tedit 0)
-  (fp_text reference CT6-2 (at 0 0 -90) (layer F.SilkS) hide
+  (fp_text reference REF** (at 0 0 -90) (layer F.SilkS)
     (effects (font (size 0.77216 0.77216) (thickness 0.077216)) (justify right top))
   )
   (fp_text value SJ2-35813B-SMT-TR (at 0 0 -180) (layer F.SilkS) hide
@@ -19,12 +19,7 @@
   (fp_line (start -5.75 -2.5) (end -8.25 -2.5) (layer F.Fab) (width 0.127))
   (fp_line (start -8.25 -2.5) (end -8.25 2.5) (layer F.Fab) (width 0.127))
   (fp_line (start -8.25 2.5) (end -5.75 2.5) (layer F.Fab) (width 0.127))
-  (fp_text user ">NAME\n							" (at -8.529468 -6.0208) (layer F.SilkS)
-    (effects (font (size 1.21068 1.21068) (thickness 0.101952)) (justify left bottom))
-  )
-  (fp_text user ">VALUE\n							" (at -8.51534 6.261281) (layer F.Fab)
-    (effects (font (size 1.208675 1.208675) (thickness 0.101783)) (justify left top))
-  )
+
   (pad 1 smd rect (at -3.7 3.7) (size 1.8 2.6) (layers F.Cu F.Paste F.Mask)
     (solder_mask_margin 0.1016))
   (pad 2 smd rect (at 3.05 3.7) (size 1.8 2.6) (layers F.Cu F.Paste F.Mask)

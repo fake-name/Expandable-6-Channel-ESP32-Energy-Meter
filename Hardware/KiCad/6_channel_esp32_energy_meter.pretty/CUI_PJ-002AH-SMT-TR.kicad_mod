@@ -1,16 +1,11 @@
 (module CUI_PJ-002AH-SMT-TR (layer F.Cu) (tedit 0)
-  (fp_text reference J4 (at 0 0) (layer F.SilkS) hide
+  (fp_text reference REF** (at 0 0) (layer F.SilkS)
     (effects (font (size 0.77216 0.77216) (thickness 0.077216)) (justify left bottom))
   )
   (fp_text value 9-12VAC (at 0 0) (layer F.SilkS) hide
     (effects (font (size 1.20954 1.20954) (thickness 0.096763)) (justify left bottom))
   )
-  (fp_text user ">NAME\n							" (at -11.2628 -2.186359) (layer F.SilkS)
-    (effects (font (size 1.210023 1.210023) (thickness 0.101896)) (justify left bottom))
-  )
-  (fp_text user ">VALUE\n							" (at -11.4888 14.9575) (layer F.Fab)
-    (effects (font (size 1.20954 1.20954) (thickness 0.101856)) (justify left bottom))
-  )
+
   (fp_circle (center 0 -1.99) (end 0.2 -1.99) (layer F.SilkS) (width 0.4))
   (fp_line (start -11.1 1.2) (end -11.1 10.2) (layer F.Fab) (width 0.127))
   (fp_line (start -11.1 10.2) (end 3.7 10.2) (layer F.Fab) (width 0.127))
