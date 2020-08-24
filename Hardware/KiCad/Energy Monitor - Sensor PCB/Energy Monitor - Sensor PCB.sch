@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:6_channel_esp32_energy_meter-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -52,17 +51,6 @@ Wire Wire Line
 	5050 1650 5050 3850
 Wire Wire Line
 	5050 3850 4800 3850
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J1
-U 1 1 5F43993A
-P 1600 2750
-F 0 "J1" H 1650 3075 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 1650 3076 50  0001 C CNN
-F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 1600 2750 50  0001 C CNN
-F 3 "~" H 1600 2750 50  0001 C CNN
-	1    1600 2750
-	1    0    0    1   
-$EndComp
 $Comp
 L power:+3.3V #PWR03
 U 1 1 5F43C25E
@@ -132,8 +120,8 @@ GND
 Wire Wire Line
 	8300 4150 8300 4250
 $Comp
-L 6_channel_esp32_energy_meter-eagle-import:R-US_R0603 R2
-U 1 0 5F45F957
+L Energy-Monitor---Sensor-PCB-rescue:R-US_R0603-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue R2
+U 1 1 5F45F957
 P 8300 3950
 AR Path="/5F45F957" Ref="R2"  Part="1" 
 AR Path="/5F4280A7/5F45F957" Ref="R?"  Part="1" 
@@ -146,8 +134,8 @@ F 3 "" H 8300 3950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 6_channel_esp32_energy_meter-eagle-import:LEDCHIPLED_0603 CF1
-U 1 0 5F45F95E
+L Energy-Monitor---Sensor-PCB-rescue:LEDCHIPLED_0603-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue CF1
+U 1 1 5F45F95E
 P 8300 4350
 AR Path="/5F45F95E" Ref="CF1"  Part="1" 
 AR Path="/5F4280A7/5F45F95E" Ref="CF?"  Part="1" 
@@ -544,4 +532,15 @@ Connection ~ 1950 2550
 Connection ~ 3100 2550
 Wire Wire Line
 	3100 2550 3100 4300
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5F4452F6
+P 1700 2750
+F 0 "J1" H 1750 3075 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 1750 3076 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 1700 2750 50  0001 C CNN
+F 3 "~" H 1700 2750 50  0001 C CNN
+	1    1700 2750
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

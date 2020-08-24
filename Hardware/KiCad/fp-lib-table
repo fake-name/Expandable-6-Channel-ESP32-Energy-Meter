@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name 6_channel_esp32_energy_meter)(type KiCad)(uri "$(KIPRJMOD)/6_channel_esp32_energy_meter.pretty")(options "")(descr ""))
-  (lib (name Connector_IDC)(type KiCad)(uri C:/code/kicad/kicad-footprints/Connector_IDC.pretty)(options "")(descr ""))
-)
