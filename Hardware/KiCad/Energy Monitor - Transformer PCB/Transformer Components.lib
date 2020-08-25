@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# EI30-15.5
+#
+DEF EI30-15.5 T 0 40 Y Y 1 F N
+F0 "T" 0 100 50 H V C CNN
+F1 "EI30-15.5" 0 -150 50 H I C CNN
+F2 "Energy Monitor - Transformer PCB:EI30-15.5-TH" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -80 -20 0 0 1 20 N
+C 80 -70 0 0 1 20 N
+S -200 -300 200 50 0 1 0 N
+P 2 0 1 20 -50 0 -50 -250 N
+P 2 0 1 20 50 -50 50 -200 N
+P 4 0 1 0 -200 0 -50 0 -50 -250 -200 -250 N
+P 4 0 1 0 200 -50 50 -50 50 -200 200 -200 N
+X ~ 1 -300 0 100 R 50 50 1 1 W
+X ~ 5 -300 -250 100 R 50 50 1 1 W
+X ~ 7 300 -200 100 L 50 50 1 1 w
+X ~ 9 300 -50 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+#End Library
