@@ -1,5 +1,3 @@
 (sym_lib_table
-  (lib (name Energy_Monitor_-_Sensor_PCB-eagle-import)(type Legacy)(uri "${KIPRJMOD}/Energy Monitor - Sensor PCB-eagle-import.lib")(options "")(descr ""))
-  (lib (name Energy_Monitor_-_Sensor_PCB-cache)(type Legacy)(uri "${KIPRJMOD}/Energy Monitor - Sensor PCB-cache.lib")(options "")(descr ""))
   (lib (name Energy-Monitor---Sensor-PCB-rescue)(type Legacy)(uri "${KIPRJMOD}/Energy Monitor - Sensor PCB-rescue.lib")(options "")(descr ""))
 )

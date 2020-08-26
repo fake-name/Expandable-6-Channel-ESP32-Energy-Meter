@@ -120,7 +120,7 @@ GND
 Wire Wire Line
 	8300 4150 8300 4250
 $Comp
-L Energy-Monitor---Sensor-PCB-rescue:R-US_R0603-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue R2
+L custom:R-US_R0603-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue R2
 U 1 1 5F45F957
 P 8300 3950
 AR Path="/5F45F957" Ref="R2"  Part="1" 
@@ -134,7 +134,7 @@ F 3 "" H 8300 3950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Energy-Monitor---Sensor-PCB-rescue:LEDCHIPLED_0603-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue CF1
+L custom:LEDCHIPLED_0603-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue CF1
 U 1 1 5F45F95E
 P 8300 4350
 AR Path="/5F45F95E" Ref="CF1"  Part="1" 
@@ -176,8 +176,6 @@ F 3 "" H 8300 3700 50  0001 C CNN
 	1    8300 3700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1900 2750
-NoConn ~ 1400 2750
 $Sheet
 S 3200 3600 1600 1650
 U 5F53F374
@@ -461,77 +459,15 @@ Wire Wire Line
 	5500 1250 5500 1200
 Connection ~ 5500 1250
 Wire Wire Line
-	1400 2550 1350 2550
-Wire Wire Line
-	1350 2350 1950 2350
-Wire Wire Line
-	1950 2350 1950 2550
-Wire Wire Line
-	1950 2550 1900 2550
-Wire Wire Line
-	1350 2350 1350 2550
-Wire Wire Line
-	1400 2650 1250 2650
-Wire Wire Line
-	1250 2650 1250 2250
-Wire Wire Line
-	1250 2250 2050 2250
-Wire Wire Line
-	1900 2650 2050 2650
-Wire Wire Line
-	2050 2650 2050 2250
-Wire Wire Line
-	1400 2950 1350 2950
-Wire Wire Line
-	1350 2950 1350 3150
-Wire Wire Line
-	1350 3150 1950 3150
-Wire Wire Line
-	1950 3150 1950 2950
-Wire Wire Line
-	1950 2950 1900 2950
-Wire Wire Line
-	1900 2850 2050 2850
-Wire Wire Line
-	2050 2850 2050 3250
-Wire Wire Line
-	2050 3250 1250 3250
-Wire Wire Line
-	1250 3250 1250 2850
-Wire Wire Line
-	1250 2850 1400 2850
-Wire Wire Line
-	2900 1700 2900 2950
-Wire Wire Line
-	2950 1800 2950 2850
-Wire Wire Line
-	3050 2000 3050 2650
-Wire Wire Line
-	3100 2100 3100 2550
-Wire Wire Line
-	1950 2950 2900 2950
-Connection ~ 1950 2950
-Connection ~ 2900 2950
-Wire Wire Line
 	2900 2950 2900 3900
 Wire Wire Line
-	2950 2850 2050 2850
-Connection ~ 2950 2850
-Wire Wire Line
-	2950 2850 2950 4000
-Connection ~ 2050 2850
-Wire Wire Line
-	2050 2650 3050 2650
-Connection ~ 2050 2650
-Connection ~ 3050 2650
-Wire Wire Line
-	3050 2650 3050 4200
-Wire Wire Line
-	1950 2550 3100 2550
-Connection ~ 1950 2550
-Connection ~ 3100 2550
+	2900 1700 2900 2950
+Connection ~ 2900 2950
 Wire Wire Line
 	3100 2550 3100 4300
+Wire Wire Line
+	3100 2100 3100 2550
+Connection ~ 3100 2550
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J1
 U 1 1 5F4452F6
@@ -543,4 +479,68 @@ F 3 "~" H 1700 2750 50  0001 C CNN
 	1    1700 2750
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	3050 2650 3050 4200
+Wire Wire Line
+	3050 2000 3050 2650
+Connection ~ 3050 2650
+Wire Wire Line
+	2050 2650 3050 2650
+Wire Wire Line
+	2950 2850 2950 4000
+Wire Wire Line
+	2950 1800 2950 2850
+Connection ~ 2950 2850
+Wire Wire Line
+	2950 2850 2050 2850
+Wire Wire Line
+	1250 2850 1400 2850
+Wire Wire Line
+	1250 3250 1250 2850
+Wire Wire Line
+	2050 3250 1250 3250
+Wire Wire Line
+	2050 2850 2050 3250
+Connection ~ 2050 2850
+Wire Wire Line
+	1900 2850 2050 2850
+Wire Wire Line
+	1950 2950 2900 2950
+Wire Wire Line
+	1950 2950 1900 2950
+Connection ~ 1950 2950
+Wire Wire Line
+	1950 3150 1950 2950
+Wire Wire Line
+	1350 3150 1950 3150
+Wire Wire Line
+	1350 2950 1350 3150
+Wire Wire Line
+	1400 2950 1350 2950
+Wire Wire Line
+	2050 2650 2050 2250
+Connection ~ 2050 2650
+Wire Wire Line
+	1900 2650 2050 2650
+Wire Wire Line
+	1250 2250 2050 2250
+Wire Wire Line
+	1250 2650 1250 2250
+Wire Wire Line
+	1400 2650 1250 2650
+Wire Wire Line
+	1350 2350 1350 2550
+Wire Wire Line
+	1950 2550 3100 2550
+Wire Wire Line
+	1950 2550 1900 2550
+Connection ~ 1950 2550
+Wire Wire Line
+	1950 2350 1950 2550
+Wire Wire Line
+	1350 2350 1950 2350
+Wire Wire Line
+	1400 2550 1350 2550
+NoConn ~ 1400 2750
+NoConn ~ 1900 2750
 $EndSCHEMATC

@@ -81,17 +81,6 @@ Wire Wire Line
 	6050 2650 6050 2700
 Wire Wire Line
 	6050 2700 6100 2700
-$Comp
-L power:+3.3V #PWR05
-U 1 1 5F43F22F
-P 6700 2650
-F 0 "#PWR05" H 6700 2500 50  0001 C CNN
-F 1 "+3.3V" H 6715 2823 50  0000 C CNN
-F 2 "" H 6700 2650 50  0001 C CNN
-F 3 "" H 6700 2650 50  0001 C CNN
-	1    6700 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6700 2650 6700 2700
 Wire Wire Line
@@ -120,7 +109,7 @@ GND
 Wire Wire Line
 	8300 4150 8300 4250
 $Comp
-L Energy-Monitor---Sensor-PCB-rescue:R-US_R0603-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue R2
+L custom:R-US_R0603-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue R2
 U 1 1 5F45F957
 P 8300 3950
 AR Path="/5F45F957" Ref="R2"  Part="1" 
@@ -134,7 +123,7 @@ F 3 "" H 8300 3950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Energy-Monitor---Sensor-PCB-rescue:LEDCHIPLED_0603-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue CF1
+L custom:LEDCHIPLED_0603-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue CF1
 U 1 1 5F45F95E
 P 8300 4350
 AR Path="/5F45F95E" Ref="CF1"  Part="1" 
@@ -543,4 +532,17 @@ Wire Wire Line
 	1400 2550 1350 2550
 NoConn ~ 1400 2750
 NoConn ~ 1900 2750
+$Comp
+L power:+5V #PWR?
+U 1 1 5F4680F3
+P 6700 2650
+F 0 "#PWR?" H 6700 2500 50  0001 C CNN
+F 1 "+5V" H 6715 2823 50  0000 C CNN
+F 2 "" H 6700 2650 50  0001 C CNN
+F 3 "" H 6700 2650 50  0001 C CNN
+	1    6700 2650
+	1    0    0    -1  
+$EndComp
+Text Notes 5600 2100 0    50   ~ 0
+5V Rail is unused on this board
 $EndSCHEMATC

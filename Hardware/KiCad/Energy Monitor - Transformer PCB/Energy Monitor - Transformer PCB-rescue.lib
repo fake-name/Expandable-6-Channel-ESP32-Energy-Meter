@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# EI30-15.5
+# EI30-15.5-Transformer-Components
 #
-DEF EI30-15.5 T 0 40 Y Y 1 F N
+DEF EI30-15.5-Transformer-Components T 0 40 Y Y 1 F N
 F0 "T" 0 100 50 H V C CNN
-F1 "EI30-15.5" 0 -150 50 H I C CNN
+F1 "EI30-15.5-Transformer-Components" 0 -150 50 H I C CNN
 F2 "Energy Monitor - Transformer PCB:EI30-15.5-TH" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

@@ -92,7 +92,7 @@ Connection ~ 4250 5000
 Wire Wire Line
 	4250 5000 4250 5100
 $Comp
-L Transformer-Components:EI30-15.5 T3
+L Energy-Monitor---Transformer-PCB-rescue:EI30-15.5-Transformer-Components T3
 U 1 1 5F43DC6E
 P 3450 4800
 F 0 "T3" H 3450 4933 50  0000 C CNN
@@ -103,7 +103,7 @@ F 3 "" H 3450 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transformer-Components:EI30-15.5 T1
+L Energy-Monitor---Transformer-PCB-rescue:EI30-15.5-Transformer-Components T1
 U 1 1 5F43F017
 P 3400 2800
 F 0 "T1" H 3400 2933 50  0000 C CNN
@@ -114,7 +114,7 @@ F 3 "" H 3400 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transformer-Components:EI30-15.5 T2
+L Energy-Monitor---Transformer-PCB-rescue:EI30-15.5-Transformer-Components T2
 U 1 1 5F43F7AB
 P 3400 3400
 F 0 "T2" H 3400 3533 50  0000 C CNN
@@ -742,12 +742,12 @@ Wire Wire Line
 	5550 4500 5550 4600
 Connection ~ 5550 4600
 Wire Wire Line
-	5550 4600 6300 4600
+	5550 4600 5700 4600
 Wire Wire Line
 	5550 5400 5550 5300
 Connection ~ 5550 5300
 Wire Wire Line
-	5550 5300 6200 5300
+	5550 5300 5700 5300
 $Comp
 L power:+9V #PWR01
 U 1 1 5F4D739D
@@ -776,4 +776,78 @@ Wire Wire Line
 	5050 6300 5050 6400
 Wire Wire Line
 	5050 6700 5050 6800
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J11
+U 1 1 5F46D931
+P 7200 4900
+F 0 "J11" V 7250 5180 50  0000 L CNN
+F 1 "Conn_02x05_Odd_Even" H 7250 5226 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 7200 4900 50  0001 C CNN
+F 3 "~" H 7200 4900 50  0001 C CNN
+	1    7200 4900
+	0    1    1    0   
+$EndComp
+NoConn ~ 7000 4700
+NoConn ~ 7400 5200
+Wire Wire Line
+	6500 5300 7000 5300
+Wire Wire Line
+	7000 5300 7000 5200
+Connection ~ 6500 5300
+Wire Wire Line
+	7100 5200 7100 5300
+Wire Wire Line
+	7100 5300 7000 5300
+Connection ~ 7000 5300
+Wire Wire Line
+	7200 5200 7200 5300
+Wire Wire Line
+	7200 5300 7100 5300
+Connection ~ 7100 5300
+Wire Wire Line
+	7300 5200 7300 5300
+Wire Wire Line
+	7300 5300 7200 5300
+Connection ~ 7200 5300
+Wire Wire Line
+	7100 4700 7100 4600
+Wire Wire Line
+	7100 4600 6600 4600
+Connection ~ 6600 4600
+Wire Wire Line
+	7100 4600 7200 4600
+Wire Wire Line
+	7200 4600 7200 4700
+Connection ~ 7100 4600
+Wire Wire Line
+	7200 4600 7300 4600
+Wire Wire Line
+	7300 4600 7300 4700
+Connection ~ 7200 4600
+Wire Wire Line
+	7300 4600 7400 4600
+Wire Wire Line
+	7400 4600 7400 4700
+Connection ~ 7300 4600
+$Comp
+L Device:CP1 C3
+U 1 1 5F4E5B78
+P 5700 4950
+F 0 "C3" H 5815 4996 50  0000 L CNN
+F 1 "CP1" H 5815 4905 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 5700 4950 50  0001 C CNN
+F 3 "~" H 5700 4950 50  0001 C CNN
+	1    5700 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4800 5700 4600
+Connection ~ 5700 4600
+Wire Wire Line
+	5700 4600 6300 4600
+Wire Wire Line
+	5700 5100 5700 5300
+Connection ~ 5700 5300
+Wire Wire Line
+	5700 5300 6200 5300
 $EndSCHEMATC
