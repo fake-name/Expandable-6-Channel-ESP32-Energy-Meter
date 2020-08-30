@@ -820,33 +820,11 @@ Connection ~ 5450 3050
 Wire Wire Line
 	5450 3050 5450 3850
 Wire Wire Line
-	5150 3450 5850 3450
-Wire Wire Line
-	5850 3450 5850 3900
-Wire Wire Line
-	5850 3900 6300 3900
-Wire Wire Line
-	5750 4000 5750 3550
-Wire Wire Line
-	5750 3550 5150 3550
-Wire Wire Line
-	5750 4000 6300 4000
-Wire Wire Line
-	5350 2950 5350 3350
-Wire Wire Line
-	5350 3350 5150 3350
+	5150 3450 5750 3450
 Wire Wire Line
 	5350 2950 6300 2950
 Wire Wire Line
-	5150 3250 5250 3250
-Wire Wire Line
-	5250 3250 5250 2850
-Wire Wire Line
 	5250 2850 6300 2850
-Wire Wire Line
-	5150 1800 6300 1800
-Wire Wire Line
-	5150 1900 6300 1900
 Wire Wire Line
 	5150 2000 5250 2000
 Wire Wire Line
@@ -1209,23 +1187,23 @@ Wire Wire Line
 $Comp
 L Device:R_Small R4
 U 1 1 5F7794F8
-P 2450 2100
-F 0 "R4" H 2509 2146 50  0000 L CNN
-F 1 "2.2K" H 2509 2055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2450 2100 50  0001 C CNN
-F 3 "~" H 2450 2100 50  0001 C CNN
-	1    2450 2100
+P 2750 2100
+F 0 "R4" H 2809 2146 50  0000 L CNN
+F 1 "2.2K" H 2809 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2750 2100 50  0001 C CNN
+F 3 "~" H 2750 2100 50  0001 C CNN
+	1    2750 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5F77A342
-P 2750 2100
-F 0 "R5" H 2809 2146 50  0000 L CNN
-F 1 "2.2K" H 2809 2055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2750 2100 50  0001 C CNN
-F 3 "~" H 2750 2100 50  0001 C CNN
-	1    2750 2100
+P 2450 2100
+F 0 "R5" H 2509 2146 50  0000 L CNN
+F 1 "2.2K" H 2509 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2450 2100 50  0001 C CNN
+F 3 "~" H 2450 2100 50  0001 C CNN
+	1    2450 2100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1262,16 +1240,8 @@ Wire Wire Line
 	2750 2200 2750 2400
 Wire Wire Line
 	2750 2400 2400 2400
-Wire Wire Line
-	2450 3650 2450 2300
 Connection ~ 2450 2300
 Connection ~ 2750 2400
-Wire Wire Line
-	2450 3650 2350 3650
-Wire Wire Line
-	2350 3850 2750 3850
-Wire Wire Line
-	2750 3850 2750 2400
 Wire Wire Line
 	8000 1700 8000 1850
 Wire Wire Line
@@ -1431,4 +1401,126 @@ F 3 "" H 3000 5400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2350 4650 2850 4650
+Wire Wire Line
+	5150 3550 5850 3550
+Wire Wire Line
+	5850 3550 5850 3900
+Wire Wire Line
+	5850 3900 6300 3900
+Wire Wire Line
+	5750 4000 6300 4000
+Wire Wire Line
+	5750 3450 5750 4000
+Wire Wire Line
+	5350 2950 5350 3250
+Wire Wire Line
+	5150 3250 5350 3250
+Wire Wire Line
+	5250 2850 5250 3350
+Wire Wire Line
+	5250 3350 5150 3350
+Wire Wire Line
+	5150 1800 6300 1800
+Wire Wire Line
+	5150 1900 6300 1900
+Wire Wire Line
+	2450 3850 2350 3850
+Wire Wire Line
+	2450 2300 2450 2600
+Wire Wire Line
+	2350 3650 2750 3650
+Wire Wire Line
+	2750 3650 2750 2700
+$Comp
+L Connector_Generic:Conn_01x05 J11
+U 1 1 5F6CED99
+P 3600 2600
+F 0 "J11" H 3550 2950 50  0000 L CNN
+F 1 "Conn_01x05" H 3680 2551 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3600 2600 50  0001 C CNN
+F 3 "~" H 3600 2600 50  0001 C CNN
+	1    3600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J12
+U 1 1 5F7014EB
+P 3950 2600
+F 0 "J12" H 3900 2950 50  0000 L CNN
+F 1 "Conn_01x05" H 4030 2551 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3950 2600 50  0001 C CNN
+F 3 "~" H 3950 2600 50  0001 C CNN
+	1    3950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0118
+U 1 1 5F7018CC
+P 3150 2150
+F 0 "#PWR0118" H 3150 2000 50  0001 C CNN
+F 1 "+3.3V" H 3165 2323 50  0000 C CNN
+F 2 "" H 3150 2150 50  0001 C CNN
+F 3 "" H 3150 2150 50  0001 C CNN
+	1    3150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0119
+U 1 1 5F71B36B
+P 3250 2250
+F 0 "#PWR0119" H 3250 2100 50  0001 C CNN
+F 1 "+5V" H 3265 2423 50  0000 C CNN
+F 2 "" H 3250 2250 50  0001 C CNN
+F 3 "" H 3250 2250 50  0001 C CNN
+	1    3250 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2250 3250 2400
+Wire Wire Line
+	3250 2400 3400 2400
+Connection ~ 3400 2400
+Wire Wire Line
+	3400 2400 3750 2400
+Wire Wire Line
+	3150 2150 3150 2500
+Wire Wire Line
+	3150 2500 3400 2500
+Connection ~ 3400 2500
+Wire Wire Line
+	3400 2500 3750 2500
+$Comp
+L power:GND #PWR0120
+U 1 1 5F74F010
+P 3300 2900
+F 0 "#PWR0120" H 3300 2650 50  0001 C CNN
+F 1 "GND" H 3305 2727 50  0000 C CNN
+F 2 "" H 3300 2900 50  0001 C CNN
+F 3 "" H 3300 2900 50  0001 C CNN
+	1    3300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2900 3300 2800
+Wire Wire Line
+	3300 2800 3400 2800
+Connection ~ 3400 2800
+Wire Wire Line
+	3400 2800 3750 2800
+Wire Wire Line
+	3750 2700 3400 2700
+Connection ~ 2750 2700
+Wire Wire Line
+	2750 2700 2750 2400
+Connection ~ 3400 2700
+Wire Wire Line
+	3400 2700 2750 2700
+Wire Wire Line
+	3750 2600 3400 2600
+Connection ~ 2450 2600
+Wire Wire Line
+	2450 2600 2450 3850
+Connection ~ 3400 2600
+Wire Wire Line
+	3400 2600 2450 2600
 $EndSCHEMATC
