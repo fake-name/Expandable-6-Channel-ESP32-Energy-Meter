@@ -979,6 +979,17 @@ Wire Wire Line
 	8400 2450 8800 2450
 Wire Wire Line
 	5600 1550 5600 1500
+Wire Wire Line
+	5600 1200 5600 1150
+Wire Wire Line
+	5600 850  5600 800 
+Connection ~ 5600 1550
+Text Label 6150 4350 0    50   ~ 0
+SDI
+Text Label 6150 4450 0    50   ~ 0
+SDO
+Text Label 6150 4550 0    50   ~ 0
+SCLK
 Wire Bus Line
 	8300 2150 8300 2650
 Wire Bus Line
@@ -987,9 +998,4 @@ Wire Bus Line
 	6000 2650 6000 3950
 Wire Bus Line
 	8300 2650 8300 3450
-Wire Wire Line
-	5600 1200 5600 1150
-Wire Wire Line
-	5600 850  5600 800 
-Connection ~ 5600 1550
 $EndSCHEMATC
