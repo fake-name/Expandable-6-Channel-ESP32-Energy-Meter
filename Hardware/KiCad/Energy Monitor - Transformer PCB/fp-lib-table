@@ -1,5 +1,4 @@
 (fp_lib_table
-  (lib (name "Energy Monitor - Transformer PCB")(type KiCad)(uri "${KIPRJMOD}/Energy Monitor - Transformer PCB.pretty")(options "")(descr ""))
   (lib (name Diode_THT)(type KiCad)(uri C:/code/kicad/kicad-footprints/Diode_THT.pretty)(options "")(descr ""))
   (lib (name Resistor_THT)(type KiCad)(uri C:/code/kicad/kicad-footprints/Resistor_THT.pretty)(options "")(descr ""))
   (lib (name LED_THT)(type KiCad)(uri C:/code/kicad/kicad-footprints/LED_THT.pretty)(options "")(descr ""))

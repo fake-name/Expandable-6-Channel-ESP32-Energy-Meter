@@ -36,17 +36,6 @@ F 3 "~" H 4500 4800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:D D3
-U 1 1 5F44603A
-P 4500 5100
-F 0 "D3" H 4500 5317 50  0000 C CNN
-F 1 "D" H 4500 5226 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal" H 4500 5100 50  0001 C CNN
-F 3 "~" H 4500 5100 50  0001 C CNN
-	1    4500 5100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D D4
 U 1 1 5F44650E
 P 4500 5300
@@ -60,13 +49,9 @@ $EndComp
 Wire Wire Line
 	4350 4800 4250 4800
 Wire Wire Line
-	4250 4800 4250 5000
-Wire Wire Line
-	4250 5100 4350 5100
-Wire Wire Line
 	4350 5300 4050 5300
 Wire Wire Line
-	4050 5300 4050 4850
+	4050 5300 4050 5200
 Wire Wire Line
 	4050 4600 4350 4600
 Wire Wire Line
@@ -76,50 +61,29 @@ Wire Wire Line
 Wire Wire Line
 	4750 4800 4650 4800
 Wire Wire Line
-	4650 5100 4750 5100
-Wire Wire Line
-	4750 5100 4750 5300
-Wire Wire Line
 	4750 5300 4650 5300
 Wire Wire Line
-	3750 4850 4050 4850
-Connection ~ 4050 4850
+	3750 4950 4050 4950
 Wire Wire Line
-	4050 4850 4050 4600
-Wire Wire Line
-	4250 5000 3750 5000
-Connection ~ 4250 5000
-Wire Wire Line
-	4250 5000 4250 5100
+	4250 5050 3750 5050
 $Comp
-L Energy-Monitor---Transformer-PCB-rescue:EI30-15.5-Transformer-Components T3
-U 1 1 5F43DC6E
-P 3450 4800
-F 0 "T3" H 3450 4933 50  0000 C CNN
-F 1 "EI30-15.5" H 3450 4650 50  0001 C CNN
-F 2 "Energy Monitor - Transformer PCB:EI30-15.5-TH" H 3450 4800 50  0001 C CNN
-F 3 "" H 3450 4800 50  0001 C CNN
-	1    3450 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Energy-Monitor---Transformer-PCB-rescue:EI30-15.5-Transformer-Components T1
+L custom:EI30-15.5 T1
 U 1 1 5F43F017
 P 3400 2800
 F 0 "T1" H 3400 2933 50  0000 C CNN
 F 1 "EI30-15.5" H 3400 2650 50  0001 C CNN
-F 2 "Energy Monitor - Transformer PCB:EI30-15.5-TH" H 3400 2800 50  0001 C CNN
+F 2 "custom:EI30-15.5-TH" H 3400 2800 50  0001 C CNN
 F 3 "" H 3400 2800 50  0001 C CNN
 	1    3400 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L Energy-Monitor---Transformer-PCB-rescue:EI30-15.5-Transformer-Components T2
+L custom:EI30-15.5 T2
 U 1 1 5F43F7AB
 P 3400 3400
 F 0 "T2" H 3400 3533 50  0000 C CNN
 F 1 "EI30-15.5" H 3400 3250 50  0001 C CNN
-F 2 "Energy Monitor - Transformer PCB:EI30-15.5-TH" H 3400 3400 50  0001 C CNN
+F 2 "custom:EI30-15.5-TH" H 3400 3400 50  0001 C CNN
 F 3 "" H 3400 3400 50  0001 C CNN
 	1    3400 3400
 	1    0    0    -1  
@@ -535,16 +499,14 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5F458980
-P 2750 4800
-F 0 "J3" H 2668 4925 50  0000 C CNN
-F 1 "Conn_01x02" H 2668 4926 50  0001 C CNN
-F 2 "Energy Monitor - Transformer PCB:WE 691411410002 - 2 Pin Wire-To-Board Terminal Block" H 2750 4800 50  0001 C CNN
-F 3 "~" H 2750 4800 50  0001 C CNN
-	1    2750 4800
+P 2550 4700
+F 0 "J3" H 2468 4825 50  0000 C CNN
+F 1 "Conn_01x02" H 2468 4826 50  0001 C CNN
+F 2 "Energy Monitor - Transformer PCB:WE 691411410002 - 2 Pin Wire-To-Board Terminal Block" H 2550 4700 50  0001 C CNN
+F 3 "~" H 2550 4700 50  0001 C CNN
+	1    2550 4700
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2950 4800 3150 4800
 Wire Wire Line
 	2900 3400 3100 3400
 Wire Wire Line
@@ -562,11 +524,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 3650 3100 3650
 Wire Wire Line
-	2950 4900 3050 4900
-Wire Wire Line
-	3050 4900 3050 5050
-Wire Wire Line
-	3050 5050 3150 5050
+	2750 4800 2850 4800
 NoConn ~ 9100 3250
 NoConn ~ 8600 3250
 NoConn ~ 8200 3250
@@ -850,4 +808,66 @@ Wire Wire Line
 Connection ~ 5700 5300
 Wire Wire Line
 	5700 5300 6200 5300
+$Comp
+L custom:AHI050 T3
+U 1 1 5F4D7987
+P 3450 4700
+F 0 "T3" H 3450 4833 50  0000 C CNN
+F 1 "AHI050" H 3450 4500 50  0001 C CNN
+F 2 "custom:AHI050-TH" H 3450 4700 50  0001 C CNN
+F 3 "" H 3450 4700 50  0001 C CNN
+	1    3450 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5200 4050 5200
+Connection ~ 4050 4950
+Connection ~ 4050 5200
+Connection ~ 4250 5050
+Wire Wire Line
+	4250 4800 4250 5050
+Wire Wire Line
+	4050 4600 4050 4950
+Wire Wire Line
+	4050 4950 4050 5200
+Wire Wire Line
+	3750 4800 4250 4800
+Connection ~ 4250 4800
+Wire Wire Line
+	2850 4950 3150 4950
+Wire Wire Line
+	2750 4700 3000 4700
+Wire Wire Line
+	2850 5300 3150 5300
+Wire Wire Line
+	2850 4800 2850 4950
+Connection ~ 2850 4950
+Wire Wire Line
+	2850 4950 2850 5300
+Wire Wire Line
+	3150 5050 3000 5050
+Wire Wire Line
+	3000 5050 3000 4700
+Connection ~ 3000 4700
+Wire Wire Line
+	3000 4700 3150 4700
+Wire Wire Line
+	4750 5100 4750 5300
+Wire Wire Line
+	4250 5050 4250 5100
+Wire Wire Line
+	4650 5100 4750 5100
+Wire Wire Line
+	4250 5100 4350 5100
+$Comp
+L Device:D D3
+U 1 1 5F44603A
+P 4500 5100
+F 0 "D3" H 4500 5317 50  0000 C CNN
+F 1 "D" H 4500 5226 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal" H 4500 5100 50  0001 C CNN
+F 3 "~" H 4500 5100 50  0001 C CNN
+	1    4500 5100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
