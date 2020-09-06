@@ -43,22 +43,7 @@ F 3 "" H 8050 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L custom:SJ2-35813B-SMT-TR-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue CT1-?
-U 1 1 17D17B43
-P 1450 2300
-AR Path="/17D17B43" Ref="CT1-?"  Part="1" 
-AR Path="/5F4280A7/17D17B43" Ref="CT1-1"  Part="1" 
-AR Path="/5F53F374/17D17B43" Ref="CT1-2"  Part="1" 
-AR Path="/5F541DC1/17D17B43" Ref="CT1-?"  Part="1" 
-F 0 "CT1-1" H 1049 2701 85  0000 L BNN
-F 1 "SJ2-35813B-SMT-TR" H 1049 1899 85  0000 L BNN
-F 2 "6_channel_esp32_energy_meter:CUI_SJ2-35813B-SMT-TR" H 1450 2300 50  0001 C CNN
-F 3 "" H 1450 2300 50  0001 C CNN
-	1    1450 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L custom:SJ2-35813B-SMT-TR-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue CT2-?
+L custom:PJ-3270 CT2-?
 U 1 1 E89ABBD2
 P 1450 3500
 AR Path="/E89ABBD2" Ref="CT2-?"  Part="1" 
@@ -67,24 +52,9 @@ AR Path="/5F53F374/E89ABBD2" Ref="CT2-2"  Part="1"
 AR Path="/5F541DC1/E89ABBD2" Ref="CT2-?"  Part="1" 
 F 0 "CT2-1" H 1049 3901 85  0000 L BNN
 F 1 "SJ2-35813B-SMT-TR" H 1049 3099 85  0000 L BNN
-F 2 "6_channel_esp32_energy_meter:CUI_SJ2-35813B-SMT-TR" H 1450 3500 50  0001 C CNN
+F 2 "custom:PJ-3270" H 1450 3500 50  0001 C CNN
 F 3 "" H 1450 3500 50  0001 C CNN
 	1    1450 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L custom:SJ2-35813B-SMT-TR-6_channel_esp32_energy_meter-eagle-import-6_channel_esp32_energy_meter-rescue CT3-?
-U 1 1 F08860F8
-P 1450 4700
-AR Path="/F08860F8" Ref="CT3-?"  Part="1" 
-AR Path="/5F4280A7/F08860F8" Ref="CT3-1"  Part="1" 
-AR Path="/5F53F374/F08860F8" Ref="CT3-2"  Part="1" 
-AR Path="/5F541DC1/F08860F8" Ref="CT3-?"  Part="1" 
-F 0 "CT3-1" H 1049 5101 85  0000 L BNN
-F 1 "SJ2-35813B-SMT-TR" H 1049 4299 85  0000 L BNN
-F 2 "6_channel_esp32_energy_meter:CUI_SJ2-35813B-SMT-TR" H 1450 4700 50  0001 C CNN
-F 3 "" H 1450 4700 50  0001 C CNN
-	1    1450 4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1823,4 +1793,37 @@ Wire Wire Line
 	9350 4000 9350 4350
 Wire Wire Line
 	7800 4200 9450 4200
+$Comp
+L custom:PJ-3270 CT2-?
+U 1 1 5F55E2FA
+P 1450 2300
+AR Path="/5F55E2FA" Ref="CT2-?"  Part="1" 
+AR Path="/5F4280A7/5F55E2FA" Ref="CT1-1"  Part="1" 
+AR Path="/5F53F374/5F55E2FA" Ref="CT1-2"  Part="1" 
+AR Path="/5F541DC1/5F55E2FA" Ref="CT2-?"  Part="1" 
+F 0 "CT1-1" H 1049 2701 85  0000 L BNN
+F 1 "SJ2-35813B-SMT-TR" H 1049 1899 85  0000 L BNN
+F 2 "custom:PJ-3270" H 1450 2300 50  0001 C CNN
+F 3 "" H 1450 2300 50  0001 C CNN
+	1    1450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:PJ-3270 CT1-?
+U 1 1 5F56325B
+P 1450 4700
+AR Path="/5F56325B" Ref="CT1-?"  Part="1" 
+AR Path="/5F4280A7/5F56325B" Ref="CT3-1"  Part="1" 
+AR Path="/5F53F374/5F56325B" Ref="CT3-2"  Part="1" 
+AR Path="/5F541DC1/5F56325B" Ref="CT1-?"  Part="1" 
+F 0 "CT3-1" H 1049 5101 85  0000 L BNN
+F 1 "SJ2-35813B-SMT-TR" H 1049 4299 85  0000 L BNN
+F 2 "custom:PJ-3270" H 1450 4700 50  0001 C CNN
+F 3 "" H 1450 4700 50  0001 C CNN
+	1    1450 4700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2050 2500
+NoConn ~ 2050 3700
+NoConn ~ 2050 4900
 $EndSCHEMATC
